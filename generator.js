@@ -122,38 +122,38 @@ function getHTML(title, headerTitle, content) {
 }
 
 const pages = [
-{
-    name: 'groceries.html',
-    title: 'Groceries',
-    headerTitle: 'Groceries & Pantry',
-    content: `
+    {
+        name: 'groceries.html',
+        title: 'Groceries',
+        headerTitle: 'Groceries & Pantry',
+        content: `
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-white p-8 rounded-3xl border border-zinc-100 hover-scale">
                 <span class="material-symbols-outlined text-primary text-4xl mb-6">local_drink</span>
                 <h3 class="font-headline text-2xl font-bold mb-3">Beverages</h3>
                 <p class="text-zinc-600 mb-6">Quench your thirst with our extensive range of sodas, juices, water, and energy drinks.</p>
-                <a href="#" class="text-primary font-bold">Shop category &rarr;</a>
+                <a href="groceries.html" class="text-primary font-bold">Shop category &rarr;</a>
             </div>
             <div class="bg-white p-8 rounded-3xl border border-zinc-100 hover-scale">
                 <span class="material-symbols-outlined text-primary text-4xl mb-6">kitchen</span>
                 <h3 class="font-headline text-2xl font-bold mb-3">Dairy & Frozen</h3>
                 <p class="text-zinc-600 mb-6">Milk, cheeses, ice creams, and frozen meals guaranteed to be fresh and frosty.</p>
-                <a href="#" class="text-primary font-bold">Shop category &rarr;</a>
+                <a href="groceries.html" class="text-primary font-bold">Shop category &rarr;</a>
             </div>
             <div class="bg-white p-8 rounded-3xl border border-zinc-100 hover-scale">
                 <span class="material-symbols-outlined text-primary text-4xl mb-6">inventory_2</span>
                 <h3 class="font-headline text-2xl font-bold mb-3">Canned & Packaged</h3>
                 <p class="text-zinc-600 mb-6">Long-lasting pantry staples, pasta, rice, beans, and canned vegetables.</p>
-                <a href="#" class="text-primary font-bold">Shop category &rarr;</a>
+                <a href="groceries.html" class="text-primary font-bold">Shop category &rarr;</a>
             </div>
         </div>
     `
-},
-{
-    name: 'fresh-produce.html',
-    title: 'Fresh Produce',
-    headerTitle: 'Farm Fresh Produce',
-    content: `
+    },
+    {
+        name: 'fresh-produce.html',
+        title: 'Fresh Produce',
+        headerTitle: 'Farm Fresh Produce',
+        content: `
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1000" class="rounded-[2.5rem] w-full h-[400px] object-cover" alt="Produce Layout">
             <div class="space-y-6">
@@ -167,12 +167,12 @@ const pages = [
             </div>
         </div>
     `
-},
-{
-    name: 'bakery.html',
-    title: 'Fresh Bakery',
-    headerTitle: 'The Bakery',
-    content: `
+    },
+    {
+        name: 'bakery.html',
+        title: 'Fresh Bakery',
+        headerTitle: 'The Bakery',
+        content: `
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div class="space-y-6">
                 <h2 class="text-3xl font-black font-headline">Baked Fresh Daily</h2>
@@ -186,12 +186,12 @@ const pages = [
             <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=1000" class="rounded-[2.5rem] w-full h-[400px] object-cover" alt="Fresh Bakery">
         </div>
     `
-},
-{
-    name: 'offers.html',
-    title: 'Specials & Offers',
-    headerTitle: 'Current Specials',
-    content: `
+    },
+    {
+        name: 'offers.html',
+        title: 'Specials & Offers',
+        headerTitle: 'Current Specials',
+        content: `
         <div class="bg-red-50 p-10 rounded-[2rem] border border-red-100 flex flex-col items-center text-center max-w-3xl mx-auto space-y-6">
             <span class="material-symbols-outlined text-6xl text-primary">campaign</span>
             <h2 class="text-4xl font-black font-headline text-primary">Weekend Price Slash!</h2>
@@ -199,12 +199,12 @@ const pages = [
             <div class="mt-8 text-sm text-zinc-500">*Offers valid from Thursday to Sunday only. Terms and conditions apply.</div>
         </div>
     `
-},
-{
-    name: 'locations.html',
-    title: 'Locations',
-    headerTitle: 'Store Locations',
-    content: `
+    },
+    {
+        name: 'locations.html',
+        title: 'Locations',
+        headerTitle: 'Store Locations',
+        content: `
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div class="space-y-8">
                 <h2 class="text-3xl font-black font-headline">Find us in Lagos</h2>
@@ -214,7 +214,7 @@ const pages = [
                     <p class="text-zinc-600 mb-4">Obafemi Awolowo Way, Alausa, Ikeja</p>
                     <p class="text-zinc-600 font-medium mb-1">Hours: 9:00 AM - 9:00 PM</p>
                     <p class="text-zinc-600 font-medium mb-6">Phone: <a href="tel:+2348000000000" class="text-primary">+234 800 000 0000</a></p>
-                    <button class="primary-gradient text-white px-6 py-2 rounded-full font-bold w-full">Get Directions</button>
+                    <a href="https://www.google.com/maps/place/Shoprite/@6.6137986,3.3554221,17z/data=!3m2!4b1!5s0x103bf2d34be01e1d:0xebe991b0fbf76c5c!4m6!3m5!1s0x103b93c9e7ece127:0xc19caf1dac7dace9!8m2!3d6.6137933!4d3.357997!16s%2Fg%2F11r8cf5d7" target="_blank" class="primary-gradient text-white px-6 py-3 rounded-full font-bold w-full inline-block text-center mt-4">Get Directions</a>
                 </div>
             </div>
             <div class="h-[500px] rounded-[2rem] overflow-hidden map-container border border-zinc-100">
@@ -222,12 +222,12 @@ const pages = [
             </div>
         </div>
     `
-},
-{
-    name: 'privacy.html',
-    title: 'Privacy Policy',
-    headerTitle: 'Privacy Policy',
-    content: \`
+    },
+    {
+        name: 'privacy.html',
+        title: 'Privacy Policy',
+        headerTitle: 'Privacy Policy',
+        content: \`
         <div class="prose max-w-4xl mx-auto prose-zinc">
             <p>At Shoprite, we respect your privacy and are committed to protecting it. This Privacy Policy outlines our practices.</p>
             <h3 class="text-xl font-bold mt-8 mb-4">Information We Collect</h3>
