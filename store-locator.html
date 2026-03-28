@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Store Locator | Shoprite Nigeria</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-container": "#d12028",
+                        "secondary-container": "#fecb00",
+                        "surface": "#fbf9f9",
+                        "on-surface-variant": "#5c403d",
+                        "primary": "#e31837",
+                        "on-surface": "#1b1c1c",
+                        "on-primary": "#ffffff",
+                    },
+                    fontFamily: {
+                        "headline": ["Public Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1.25rem", "3xl": "1.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/20 selection:text-primary overflow-x-hidden page-fade-in">
+    <header class="fixed top-0 w-full z-50 glass-nav shadow-sm dark:shadow-none">
+        <nav class="flex justify-between items-center px-6 md:px-10 py-4 md:py-5 max-w-screen-2xl mx-auto font-['Public_Sans'] tracking-tight">
+            <div class="flex items-center gap-2">
+                <a href="index.html" class="text-3xl md:text-3xl font-black text-primary italic tracking-tighter">Shoprite</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-medium">
+                <a class="text-zinc-500 hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-zinc-500 hover:text-primary transition-colors" href="groceries.html">Groceries</a>
+                <a class="text-zinc-500 hover:text-primary transition-colors" href="fresh-produce.html">Fresh Produce</a>
+                <a class="text-zinc-500 hover:text-primary transition-colors" href="bakery.html">Bakery</a>
+                <a class="text-zinc-500 hover:text-primary transition-colors" href="offers.html">Offers</a>
+                <a class="text-zinc-500 hover:text-primary transition-colors" href="locations.html">Locations</a>
+            </div>
+            <div class="hidden md:flex items-center gap-4">
+                <a href="visit-us.html" class="primary-gradient text-white px-8 py-3 rounded-full font-bold shadow-lg shadow-primary/30 hover:-translate-y-1 hover:shadow-primary/50 transition-all duration-300">Visit Us</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-primary p-2">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="pt-[90px] md:pt-[110px] min-h-screen">
+        <section class="bg-primary/5 py-16 md:py-24 px-6 md:px-10 relative overflow-hidden">
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-[100px] blob"></div>
+            <div class="max-w-screen-2xl mx-auto relative z-10 text-center">
+                <h1 class="font-headline text-4xl md:text-6xl lg:text-7xl font-black text-on-surface tracking-tighter mb-10 text-gradient">Search for Shoprite <br/>Near You</h1>
+                <div class="relative max-w-2xl mx-auto group shadow-2xl rounded-full">
+                    <input type="text" placeholder="Enter your area (e.g. Ikeja, Lekki, Surulere)" class="w-full p-6 pl-14 rounded-full bg-white border-2 border-zinc-100 focus:border-primary focus:ring-0 font-black tracking-tight text-lg shadow-sm transition-all">
+                    <span class="material-symbols-outlined absolute left-6 top-1/2 -translate-y-1/2 text-zinc-400 group-focus-within:text-primary transition-colors font-black">search</span>
+                    <button class="absolute right-3 top-1/2 -translate-y-1/2 primary-gradient text-white px-10 py-3.5 rounded-full font-black tracking-widest text-[10px] uppercase">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 px-6 md:px-10 max-w-screen-2xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <a href="locations.html" class="flex items-center justify-between p-10 bg-white rounded-[3rem] border border-zinc-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
+                    <div class="space-y-2">
+                        <p class="text-[10px] font-black uppercase tracking-[0.2em] text-primary">Main Branch</p>
+                        <h4 class="font-black text-2xl group-hover:text-primary transition-colors tracking-tighter">Ikeja City Mall Branch</h4>
+                        <p class="text-zinc-500 font-medium">Obafemi Awolowo Way, Alausa</p>
+                    </div>
+                    <span class="material-symbols-outlined text-primary text-3xl group-hover:translate-x-3 transition-transform font-black">east</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-zinc-950 w-full pt-10 pb-10 px-6 md:px-10 font-['Inter'] text-sm tracking-wide text-zinc-400 text-center">
+        © 2026 Shoprite Ikeja City Mall. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
